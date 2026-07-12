@@ -299,50 +299,63 @@
 
     <form action="https://formsubmit.co/challanagarajudcme012@gmail.com" method="POST">
 
-        <!-- Optional Settings -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-        <input type="hidden" name="_next" value="http://localhost:5173/">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <label>Full Name</label>
-        <input
-            type="text"
-            name="Full Name"
-            placeholder="Enter your full name"
-            required
-        >
+    <!-- Email Template -->
+    <input type="hidden" name="_template" value="table">
 
-        <label>Email Address</label>
-        <input
-            type="email"
-            name="Email"
-            placeholder="Enter your email"
-            required
-        >
+    <!-- Email Subject -->
+    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
-        <label>Subject</label>
-        <input
-            type="text"
-            name="Subject"
-            placeholder="Job Opportunity / Project"
-        >
+    <!-- Redirect After Submit -->
+    <input
+        type="hidden"
+        name="_next"
+        value="https://your-actual-vercel-app.vercel.app/"
+    >
 
-        <label>Your Message</label>
-        <textarea
-            name="Message"
-            rows="6"
-            placeholder="Write your message..."
-            required
-        ></textarea>
+    <label for="name">Full Name</label>
+    <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your full name"
+        required
+    >
 
-        <button type="submit">
-            <i class='bx bx-mail-send'></i>
-            Send Message
-        </button>
+    <label for="email">Email Address</label>
+    <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+    >
 
-    </form>
+    <label for="subject">Subject</label>
+    <input
+        id="subject"
+        type="text"
+        name="subject"
+        placeholder="Job Opportunity / Project"
+    >
 
+    <label for="message">Your Message</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Write your message..."
+        required
+    ></textarea>
+
+    <button type="submit">
+        <i class='bx bx-mail-send'></i>
+        Send Message
+    </button>
+
+</form>
 </div>
 </section>
 
