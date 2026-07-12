@@ -524,7 +524,7 @@ header ul a:hover{
     width: 80%;
     height: 100vh;
     margin-top: 200px;
-    margin-bottom: 700px;
+    margin-bottom: 150px;
 }
 
 .project-card {
@@ -773,11 +773,12 @@ header ul a:hover{
   /* CONTACT SECTION */
 .contact-section{
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
-    gap: 10%;
     align-items: center;
+    gap: 40px;
     position: relative;
 }
 
@@ -848,17 +849,13 @@ header ul a:hover{
 .footer{
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.121);
-    z-index: 999;
-    padding: 0 3rem;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    background-color: rgba(255,255,255,.12);
+    padding: 20px 3rem;
+    position: relative;
 }
-
-
 /* BLUR EFFECT ANIMAION */
 
 .autoBlur{
@@ -1129,7 +1126,7 @@ header ul a:hover{
     }
 
     .my-project{
-        margin-bottom: 200px;
+        margin-bottom: 150px;
         scale: 0.8;
     }
 
@@ -1234,7 +1231,7 @@ header ul a:hover{
     }
 
     .my-project{
-        margin-bottom: 600px;
+        margin-bottom: 400px;
     }
 
     .project-card{
@@ -1283,10 +1280,11 @@ header ul a:hover{
     }
 
     .contact-section{
-        flex-direction: column;
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
+    flex-direction: column;
+    margin:100px 0;
+    min-height:auto;
+    height:auto;
+}
 
     .footer{
         font-size: 10px;
@@ -1381,9 +1379,11 @@ header ul a:hover{
     }
 
     .contact-section{
-        scale: 0.9;
-        height: 120vh;
-    }
+    flex-direction: column;
+    margin:100px 0;
+    min-height:auto;
+    height:auto;
+}
 
     .contact-section .section-title {
         top: -30px;
