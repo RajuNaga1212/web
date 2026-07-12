@@ -168,6 +168,7 @@ html{
     color: #00f7ff;
     transform: translateY(-5px) scale(1.15);
 }
+
 header{
     display: flex;
     position: absolute;
@@ -1017,8 +1018,53 @@ header ul a:hover{
 }
 
 
+/* Back to Home floating button */
+.back-to-home{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 69, 0.4);
+    border: 1px solid #72a1de81;
+    box-shadow: 0 0 10px #72a1de63;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+    z-index: 998;
+}
 
+.back-to-home.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 
+.back-to-home:hover{
+    background-color: #72a1de;
+    color: black;
+    box-shadow: 0 0 15px #72a1de;
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 700px){
+    .back-to-home{
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+}
 
 
 @media (max-aspect-ratio: 16/9){
@@ -1358,11 +1404,3 @@ header ul a:hover{
 
 
 }
-
-
-
-
-
-
-
-
